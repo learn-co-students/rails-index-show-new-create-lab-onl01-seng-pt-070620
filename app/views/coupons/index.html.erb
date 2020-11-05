@@ -1,5 +1,5 @@
 <div>
     <% @coupons.each do |coupon|%>
-    <%= link_to coupon, coupon_path(coupon) %>
+    <%= link_to coupon.show_coupon, coupon_path(coupon) %>
     <% end %>
 </div>
