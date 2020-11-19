@@ -1,0 +1,22 @@
+
+ 
+<%= form_tag :action => 'create', :id => @coupon %>
+
+<label>Coupon Form: </label><br>
+
+
+<label for="coupon_code">Enter the coupon code: </label>
+<input type="text" name="coupon[coupon_code]" id="coupon_code" required>
+
+
+
+<label for="store">Enter the store: </label>
+<input type="text" name="coupon[store]" id="store" required>
+
+
+<%= submit_tag "Submit Coupon" %>
+
+</form>
+
+
+<%= params.inspect %>
